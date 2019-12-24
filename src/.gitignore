@@ -1,0 +1,4 @@
+*.o
+automaton
+test*
+!test*.c

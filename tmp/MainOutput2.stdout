@@ -1,0 +1,31 @@
+Usage: bin/automaton [-h|--help] [-r|--num-rows VALUE] [-c|--num-cols VALUE]
+    [-n|--num_steps VALUE] [-t|--type STRING] [-a|--allowed-cells STRING]
+    [-d|--distribution VALUES] [-i|--interactive]
+
+Simulates a cellular automaton.
+
+Optional arguments:
+  -h, --help                  Shows this help message and exit
+  -r, --num-rows VALUE        The number of rows.
+                              The default value is 5.
+  -c, --num-cols VALUE        The number of columns.
+                              The default value is 5.
+  -n, --num-steps VALUE       The number of steps in the simulation.
+                              The default value is 5.
+  -t, --type STRING           The type of simulation.
+                              Currently, there are 3 supported types:
+                              "game-of-life", "pandemy" and "fire".
+                              The default type is "game-of-life".
+  -b, --boundary STRING       The boundary type.
+                              Currently, there are 2 supported types:
+                              "truncate" and "periodic".
+                              The default boundary is "truncate".
+  -a, --allowed-cells STRING  The allowed cells, as characters.
+                              The number of cells must be consistent
+                              with the type of simulation.
+  -d, --distribution VALUES   The initial probability distribution,
+                              which are comma-separated positive values.
+                              E.g: if the allowed cells are "abc"
+                              and the distribution is "1,1,2", then, 'c'
+                              will appear twice as more as 'a' and 'b'.
+  -i, --interactive           Enables interactive simulation.
